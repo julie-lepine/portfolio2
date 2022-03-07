@@ -9,6 +9,11 @@
     color: black;
 }
 
+/* INDEX COULEUR LIENS */
+.index main article section div div a {
+    color: black;
+}
+
 /* STYLE DES TITRES */
 .text-resizing, .text-resize {
     font-size: 20px;
@@ -36,25 +41,31 @@ main article section div div .white-color {
     padding: 15px;
 }
 
-.experiences main article section .card, .index main article section div div {
-    background-color: rgba(128, 128, 128, 0.479);
+.competences main article section .card, .index main article section div div, .experiences main article section .card {
+    background-color: rgba(177, 174, 174, 0.479);
+}
+
+/*PORTFOLIO LANGAGES */
+.littleMaj {
+    font-variant: small-caps;
+    font-size: 1.2em;
 }
 
 /* BACKGROUNDS */
 .portfolio {
-    background-image: url(/img/bcg/milkway.jpg);
+    background-image: url(../img/bcg/milkway.jpg);
 }
 
 .competences {
-    background-image: url(/img/bcg/galaxy.jpg);
+    background-image: url(../img/bcg/galaxy.jpg);
 }
 
 .experiences {
-    background-image: url(/img/bcg/starry-sky.jpg)
+    background-image: url(../img/bcg/starry-sky.jpg)
 }
 
 .index {
-    background-image: url(/img/bcg/constellations.jpg)
+    background-image: url(../img/bcg/constellations.jpg)
 }
 
 .competences, .portfolio, .experiences, .index {
@@ -71,11 +82,11 @@ main article section div div .white-color {
 }
 
 /* HOVER */ 
-.competences main article section div div:hover {
+.competences main article section div div:hover, .experiences main article section .card:hover {
     background-color: rgba(211, 211, 211, 0.603);
 }
 
-.competences main article section div div:hover h3, .competences main article section div div:hover h4 {
+.competences main article section div div:hover h3, .competences main article section div div:hover h4, .experiences main article section .card:hover ul li, .experiences main article section .card:hover h3, .experiences main article section .card:hover p, .experiences main article section .card:hover svg {
     color: black;
   }  
 
@@ -88,19 +99,29 @@ body main article section div button:hover, .index main article section div div 
     margin-right: 0;
 }
 
-.experiences main article section .card:hover, .index main article section div div:hover {
+.competences main article section .card:hover, .index main article section div div:hover {
     background-color: rgba(211, 211, 211, 0.603);
   }
   
-  .experiences main article section .card:hover h1, .experiences main article section .card:hover h2, .experiences main article section .card:hover h3, .experiences main article section .card:hover h4, .experiences main article section .card:hover p, .experiences main article section .card:hover ul, .experiences main article section .card:hover path, .experiences main article section .card:hover a, .index main article section div div:hover h1, .index main article section div div:hover h2, .index main article section div div:hover h3, .index main article section div div:hover h4, .index main article section div div:hover p, .index main article section div div:hover ul, .index main article section div div:hover path, .index main article section div div:hover a {
+  .competences main article section .card:hover h1, 
+  .competences main article section .card:hover h2, 
+  .competences main article section .card:hover h3, 
+  .competences main article section .card:hover h4, 
+  .competences main article section .card:hover p, 
+  .competences main article section .card:hover ul, 
+  .competences main article section .card:hover path, 
+  .competences main article section .card:hover a, 
+  .index main article section div div:hover h1, 
+  .index main article section div div:hover h2, 
+  .index main article section div div:hover h3, 
+  .index main article section div div:hover h4, 
+  .index main article section div div:hover p, 
+  .index main article section div div:hover ul, 
+  .index main article section div div:hover path, 
+  .index main article section div div:hover a {
     color: black;
   }
 
   .opacity {
     background-color: rgba(211, 211, 211, 0.603);
   }
-  
-  .opacity h3 {
-    color: #4d4c4c;
-  }
-    
