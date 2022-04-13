@@ -82,12 +82,12 @@ main article section div div .white-color {
 }
 
 /* HOVER */ 
-.competences main article section div div:hover, .experiences main article section .card:hover {
-    background-color: rgba(211, 211, 211, 0.603);
+.competences main article section div div:hover, .experiences main article section .card:hover, .portfolio main article section .card:hover {
+    background-color: rgba(211, 211, 211, 0.562)!important;
 }
 
-.competences main article section div div:hover h3, .competences main article section div div:hover h4, .experiences main article section .card:hover ul li, .experiences main article section .card:hover h3, .experiences main article section .card:hover p, .experiences main article section .card:hover svg {
-    color: black;
+.competences main article section div div:hover h3, .competences main article section div div:hover h4, .experiences main article section .card:hover ul li, .experiences main article section .card:hover h3, .experiences main article section .card:hover p, .experiences main article section .card:hover svg, .portfolio main article section .card:hover h2, .portfolio main article section .card:hover p {
+    color: black!important;
   }  
 
 body main article section div button, .index main article section div div .transform {
