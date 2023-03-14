@@ -1,127 +1,124 @@
-/* BREADCRUMB */
-.breadcrumbGeneral {
-    margin: 2% 0;
-    padding: 0.5%;
-    background-color: rgba(245, 240, 240, 0.7);
+:root {
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 23;
+    --bg-color: rgb(243, 179, 245);
 }
 
-.breadcrumbGeneral a, .breadcrumbGeneral li {
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    min-height: 100vh;
+}
+
+/* HEADER PAGE */
+/* nav */
+/* Dropdown Button */
+.dropbtn {
+    padding: 16px;
+    font-size: 1.5em;
+    cursor: pointer;
+    min-width: 50px;
+    max-width: 70px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    background: #212529;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding-left: 1svh;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-top: 1px solid #ffc107;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(238, 206, 206, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content {
+    font-size: 1.5em;
+    border-bottom: 1px solid #ffc107;
+    top: 85px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
     color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-/* INDEX COULEUR LIENS */
-.index main article section div div a {
-    color: black;
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f7cd4d9a;
 }
 
-/* STYLE DES TITRES */
-.text-resizing, .text-resize {
-    font-size: 20px;
+/* HEADER PRESENTATION */
+.indexPict {
+    max-width: 150px;
 }
 
-main article section h2, main article section h3, main article section h4, article div h2, main article section div div .white-color {
-    font-variant: small-caps;
+/* typewriter */
+.typewriter {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    width: max-content;
     color: white;
 }
 
-.experiences main article section div div li svg {
-    color: white;
-    margin-left: 15px;
+.typewriter::before,
+.typewriter::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-main article section p, h1, h2 {
-    color: white;
+.typewriter::before {
+    background: #212529;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
 }
 
-main article section div div .white-color {
-    font-size: 1.2em;
+.typewriter::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
-.experiences main article section div ul .padding {
-    padding: 15px;
-}
-
-.competences main article section .card, .index main article section div div, .experiences main article section .card {
-    background-color: rgba(177, 174, 174, 0.479);
-}
-
-/*PORTFOLIO LANGAGES */
-.littleMaj {
-    font-variant: small-caps;
-    font-size: 1.2em;
-}
-
-/* BACKGROUNDS */
-.portfolio {
-    background-image: url(../img/bcg/milkway.jpg);
-}
-
-.competences {
-    background-image: url(../img/bcg/galaxy.jpg);
-}
-
-.experiences {
-    background-image: url(../img/bcg/starry-sky.jpg)
-}
-
-.index {
-    background-image: url(../img/bcg/constellations.jpg)
-}
-
-.competences, .portfolio, .experiences, .index {
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-}
-
-/* PORTFOLIO HEIGHT MEDIA */
-@media screen and (min-width: 1400px) {
-    .higher {
-        margin: 7% 0;
+@keyframes typewriter {
+    to {
+        left: 100%;
     }
 }
 
-/* HOVER */ 
-.competences main article section div div:hover, .experiences main article section .card:hover, .portfolio main article section .card:hover {
-    background-color: rgba(211, 211, 211, 0.562)!important;
+@keyframes blink {
+    to {
+        background: transparent;
+    }
 }
 
-.competences main article section div div:hover h3, .competences main article section div div:hover h4, .experiences main article section .card:hover ul li, .experiences main article section .card:hover h3, .experiences main article section .card:hover p, .experiences main article section .card:hover svg, .portfolio main article section .card:hover h2, .portfolio main article section .card:hover p {
-    color: black!important;
-  }  
-
-body main article section div button, .index main article section div div .transform {
-    transition: all .5s ease-in-out;
+.subtitle {
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 1s) forwards;
 }
 
-body main article section div button:hover, .index main article section div div .transform:hover { 
-    transform: scale(1.1);
-    margin-right: 0;
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-
-.competences main article section .card:hover, .index main article section div div:hover {
-    background-color: rgba(211, 211, 211, 0.603);
-  }
-  
-  .competences main article section .card:hover h1, 
-  .competences main article section .card:hover h2, 
-  .competences main article section .card:hover h3, 
-  .competences main article section .card:hover h4, 
-  .competences main article section .card:hover p, 
-  .competences main article section .card:hover ul, 
-  .competences main article section .card:hover path, 
-  .competences main article section .card:hover a, 
-  .index main article section div div:hover h1, 
-  .index main article section div div:hover h2, 
-  .index main article section div div:hover h3, 
-  .index main article section div div:hover h4, 
-  .index main article section div div:hover p, 
-  .index main article section div div:hover ul, 
-  .index main article section div div:hover path, 
-  .index main article section div div:hover a {
-    color: black;
-  }
-
-  .opacity {
-    background-color: rgba(211, 211, 211, 0.603);
-  }
