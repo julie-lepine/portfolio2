@@ -1,0 +1,31 @@
+@media screen  and (max-width: 768px) {
+    .introCard {
+        display: flex;
+        flex-direction: column;
+        padding: 5svh 2svw;
+    }
+    .textSpeech {
+        width: auto;
+        margin: 2svh 2svh;
+    }
+    .textSpeech h2 {
+        font-size: 1.2em;
+        padding-left: 5svh;
+    }
+    .textSpeech p {
+        text-indent: 1svh;
+    }
+    #realisations {
+        height: auto;
+    }
+    #competences {
+        flex-direction: column;
+    }
+    .langagesSect {
+        width: auto;
+    }
+    
+    .diplomas {
+        width: auto;
+    }
+}
