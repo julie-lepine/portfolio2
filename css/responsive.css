@@ -1,4 +1,8 @@
 @media screen  and (max-width: 768px) {
+    .navbar-nav {
+        gap: 10px;
+        padding: 2svh 0;
+    }
     .introCard {
         display: flex;
         flex-direction: column;
@@ -6,20 +10,22 @@
     }
     .textSpeech {
         width: auto;
-        margin: 2svh 2svh;
+        margin: 5svh 3svh;
     }
     .textSpeech h2 {
-        font-size: 1.2em;
-        padding-left: 5svh;
+        font-size: 1.5em;
+        padding-left: 4svh;
     }
     .textSpeech p {
         text-indent: 1svh;
     }
     #realisations {
         height: auto;
+        padding-top: 5svh;
     }
     #competences {
         flex-direction: column;
+        padding: 7svh 0!important;
     }
     .langagesSect {
         width: auto;
